@@ -62,6 +62,8 @@ else
     fi
     
     # 企业微信推送给微信
+    echo "企业微信开始推送了"
+    echo $desp
     curl "https://service-d606bcz6-1304203451.usw.apigw.tencentcs.com/release/wecomchan?sendkey=wangyingbo&msg_type=text&to_user=WangYingBo&msg=${desp}"
 fi
 
