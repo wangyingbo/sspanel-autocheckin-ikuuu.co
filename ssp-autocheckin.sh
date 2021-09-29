@@ -62,7 +62,7 @@ else
     fi
     
     # 企业微信推送给微信
-    curl 'https://service-d606bcz6-1304203451.usw.apigw.tencentcs.com/release/wecomchan?sendkey=wangyingbo&msg_type=text&to_user=WangYingBo&msg=${desp}'
+    curl "https://service-d606bcz6-1304203451.usw.apigw.tencentcs.com/release/wecomchan?sendkey=wangyingbo&msg_type=text&to_user=WangYingBo&msg=${desp}"
 fi
 
 push_text="[${date}] ${push_status}"
