@@ -63,8 +63,9 @@ else
     
     # 企业微信推送给微信
     echo "企业微信开始推送了"
-    # echo $desp
-    curl -G --data-urlencode "sendkey=wangyingbo" --data-urlencode "msg_type=text" --data-urlencode "to_user=WangYingBo" --data-urlencode "msg=${desp}" 'https://service-d606bcz6-1304203451.usw.apigw.tencentcs.com/release/wecomchan'
+    pushContent=$(echo $desp)
+    echo $pushContent
+    curl -G --data-urlencode "sendkey=wangyingbo" --data-urlencode "msg_type=text" --data-urlencode "to_user=WangYingBo" --data-urlencode "msg=${pushContent}" 'https://service-d606bcz6-1304203451.usw.apigw.tencentcs.com/release/wecomchan'
 fi
 
 push_text="[${date}] ${push_status}"
